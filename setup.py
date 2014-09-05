@@ -45,7 +45,7 @@ with open(os.path.join(here, 'py_reporter/__init__.py'), 'r') as f:
 
 # Requires
 
-requires = []
+requires = ['xlrd', 'xlwt']
 tests_require = ['flake8', 'mock', 'nose', 'nosexcover']
 
 with open(os.path.join(here, 'README.rst')) as f:
@@ -67,7 +67,7 @@ setup(
     url="http://github.com/ryankanno/py-reporter ",
     packages=packages,
     package_data={'': ['LICENSE']},
-    package_dir={'': ''},
+    package_dir={'py_reporter': 'py_reporter'},
     install_requires=requires,
     license=meta['license'],
     tests_require=tests_require,
