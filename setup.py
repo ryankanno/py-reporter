@@ -45,7 +45,7 @@ with open(os.path.join(here, 'py_reporter/__init__.py'), 'r') as f:
 
 # Requires
 
-requires = ['xlrd', 'xlwt']
+requires = ['xlrd', 'xlwt', 'xlutils']
 tests_require = ['flake8', 'mock', 'nose', 'nosexcover']
 
 with open(os.path.join(here, 'README.rst')) as f:

@@ -12,4 +12,7 @@ def get_named_range(workbook, named_range):
     return workbook.name_map.get(named_range.lower())
 
 
+def get_named_ranges(workbook):
+    return workbook.name_map
+
 # vim: filetype=python
